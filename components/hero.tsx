@@ -5,7 +5,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import { ChevronDown } from "lucide-react"
 
-const roles = ["Front-End Engineer", "Student @ Co-op Uni Kenya", "SRHR Advocate @ RHNK", "Mobile App Developer", "Tech Enthusiast"]
+const roles = ["Front-End Engineer", "Computer Scientist @ Co-op Uni Kenya", "SRHR Advocate @ RHNK", "Mobile App Developer", "Tech Enthusiast"]
 
 export default function Hero() {
   const [currentRole, setCurrentRole] = useState(0)

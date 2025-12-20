@@ -40,6 +40,7 @@ export default function Navigation() {
     { label: "Experience", href: "#experience" },
     { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/marcellas-daniel-indeje-27627831a" },
   ]
 
   return (
@@ -54,7 +55,7 @@ export default function Navigation() {
             href="/"
             className="text-2xl font-bold bg-gradient-to-r from-rose-600 to-rose-500 bg-clip-text text-transparent"
           >
-            Marcel
+            Marcellas.D.Indeje
           </Link>
 
           {/* Desktop Menu */}
@@ -76,7 +77,7 @@ export default function Navigation() {
               className="p-2 rounded-full bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-yellow-400 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors"
             >
               {isDark ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
+            </button> 
 
             {/* Mobile Menu Button */}
             <button className="md:hidden p-2" onClick={() => setIsOpen(!isOpen)}>

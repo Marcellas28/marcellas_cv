@@ -8,7 +8,8 @@ const skillCategories = [
     skills: [
       { name: "HTML/CSS", level: 95 },
       { name: "JavaScript", level: 90 },
-      { name: "React", level: 94 },
+      { name: "Typescript", level: 96 },
+      { name: "Python", level: 90}
     ],
   },
   {
@@ -17,6 +18,9 @@ const skillCategories = [
       { name: "SQL", level: 85 },
       { name: "Node.js", level: 70 },
       { name: ".NET Core", level: 75 },
+      { name: "Python", level: 75},
+      { name: "PHP", level: 80 },
+      { name: "Java", level: 85 },
     ],
   },
   {
@@ -24,13 +28,21 @@ const skillCategories = [
     skills: [
       { name: "Next.js", level: 60 },
       { name: "ASP.NET Core", level: 70 },
+      {name : "Django", level: 60},
+      { name: "React", level: 80 },
+      { name: "Angular", level: 70 },
+      {name : "Vue.js", level: 65},
     ],
   },
   {
     title: "Tools & Others",
     skills: [
-      { name: "UI/UX Design", level: 95 },
+      { name: "UI/UX Design", level: 90 },
       { name: "Git/GitHub", level: 85 },
+      { name: "Docker", level: 80 },
+      { name: "Postman", level: 85 },
+      { name: "ASP.NET Core", level: 70 },
+      {name : "Django", level: 60},
     ],
   },
 ]

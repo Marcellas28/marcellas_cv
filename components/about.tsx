@@ -61,8 +61,18 @@ export default function About() {
 
             <div className="space-y-4 text-gray-600 dark:text-gray-300">
               <p className="text-lg leading-relaxed hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-300">
-                I'm a passionate web developer with 1+ years of experience creating web applications that deliver
-                exceptional user experiences. I specialize in JavaScript, CSS, HTML, and modern web technologies.
+                Software engineer and Developer with 2+ years of front-end development experience, specializing in building innovative solutions at the intersection of web development, graphic design, and networking.</p><p> Skilled in delivering scalable applications in agile environments and eager to contribute to impactful projects.
+
+              </p>
+              <p className="text-lg leading-relaxed hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-300">
+               <h1><b>💻 Technical Expertise:</b></h1> 
+<p>React.js, JavaScript, TypeScript, HTML, CSS, Python, Node.js, .NET Core, SQL, PostgreSQL, Firebase</p>
+
+<h1><b>Graphic Design:</b></h1> 
+Crafting visual identities and user-friendly interfaces using Adobe Photoshop and Canva
+
+<h1><b>🌐 Networking:</b></h1>
+Proficient in network configuration, troubleshooting, and TCP/IP protocols
               </p>
 
               <p className="text-lg leading-relaxed hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-300">
@@ -74,6 +84,7 @@ export default function About() {
                 Beyond coding, I have extensive experience in sound engineering and equipment control. I enjoy solving
                 complex problems and turning ideas into reality through elegant interfaces.
               </p>
+              <p>Open to: Internships | Junior Developer Roles | Freelance Design Projects | Networking with Tech Professionals</p>
 
               <div className="pt-6 flex gap-4">
                 <a

@@ -4,19 +4,27 @@ import { useEffect, useRef, useState } from "react"
 
 const experiences = [
   {
-    period: "2023 - Present",
-    position: "Web Developer",
-    company: "Tech Innovations",
-    description: "Lead developer. Developed responsive web applications and implemented UI/UX designs.",
-    skills: ["HTML", "CSS", "JS", "PHP", "MySQL"],
+    period: "2025-present",
+    position: "Front-End Engineer",
+    company: "TRC Systems",
+    description: "Develops user friendly and responsive systems as per user interests.",
+    skills: ["React", "Tailwind CSS", "JS", "SQL"],
   },
-  {
+   {
     period: "2025",
     position: "ICT Assistant",
     company: "KMTC Kilifi Campus",
     description: "Developed responsive school systems and improved network infrastructure.",
     skills: ["React", "Tailwind CSS", "JS", "SQL"],
   },
+  {
+    period: "2024 - Present",
+    position: "Web Developer",
+    company: "Tech Innovations",
+    description: "Lead developer. Developed responsive web applications and implemented amazing designs.",
+    skills: ["HTML", "CSS", "JS", "PHP", "MySQL"],
+  },
+ 
 ]
 
 export default function Experience() {
