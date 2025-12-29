@@ -41,8 +41,7 @@ const skillCategories = [
       { name: "Git/GitHub", level: 85 },
       { name: "Docker", level: 80 },
       { name: "Postman", level: 85 },
-      { name: "ASP.NET Core", level: 70 },
-      {name : "Django", level: 60},
+     
     ],
   },
 ]

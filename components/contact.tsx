@@ -70,7 +70,7 @@ export default function Contact() {
 
               <div className="flex gap-6 pt-8">
                 <a
-                  href="https://www.linkedin.com/in/marcellas-daniel-indeje-27627831a"
+                  href="https:www.linkedin.com/in/marcellas-daniel-i-27627831a"
                   className="w-12 h-12 bg-rose-600 rounded-full flex items-center justify-center hover:bg-rose-500 transition-colors hover:scale-110 transform"
                 >
                   <Linkedin size={24} />

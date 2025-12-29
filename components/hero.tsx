@@ -146,7 +146,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-r from-rose-700 to-rose-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
               </a>
               <a
-                href="https://www.linkedin.com/in/marcellas-dan-27627831a"
+                href="https://www.dropbox.com/scl/fi/9wbqpsn2t1647yjpjvqub/MARCELLAS_DANIEL_INDEJE_Resume.pdf?rlkey=dyflx5s8x9vcow6dnvaufq2ri&st=batzyz2u&dl=0"
                 className="px-8 py-3 border-2 border-rose-600 text-rose-600 dark:border-rose-400 dark:text-rose-400 rounded-full font-semibold hover:bg-rose-50 dark:hover:bg-slate-800/50 transition-colors relative group"
               >
                 <span className="relative z-10">Download CV</span>
