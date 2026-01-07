@@ -6,6 +6,7 @@ import Projects from "@/components/projects"
 import Testimonials from "@/components/testimonials"
 import Contact from "@/components/contact"
 import Navigation from "@/components/navigation"
+import Education from "@/components/Education"
 
 export const metadata = {
   title: "Marcellas Indeje | Web Developer Portfolio",
@@ -19,6 +20,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <About />
+      <Education />
       <Skills />
       <Experience />
       <Projects />
