@@ -21,7 +21,7 @@ const projects = [
     github: "https://github.com/Marcellas28/Nena-Na-Binti-1.git",
   },
   {
-    title: "School Management System",
+    title: "ID Photo Verification System",
     description: "Comprehensive system for managing school operations and student records.",
     image: "/school-management-system.jpg",
     tags: ["React", "Tailwind CSS", "SQL"],

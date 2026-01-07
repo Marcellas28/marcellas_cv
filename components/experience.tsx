@@ -5,9 +5,9 @@ import { useEffect, useRef, useState } from "react"
 const experiences = [
   {
     period: "2025-present",
-    position: "Front-End Engineer",
+    position: "Front-End Developer",
     company: "TRC Systems",
-    description: "Develops user friendly and responsive systems as per user interests.",
+    description: "Develop user friendly and responsive CRM systems as per user interests.",
     skills: ["React", "Tailwind CSS", "JS", "SQL"],
   },
    {
@@ -18,10 +18,10 @@ const experiences = [
     skills: ["React", "Tailwind CSS", "JS", "SQL"],
   },
   {
-    period: "2024 - Present",
+    period: "2023",
     position: "Web Developer",
-    company: "Tech Innovations",
-    description: "Lead developer. Developed responsive web applications and implemented amazing designs.",
+    company: "Free_Lancer",
+    description: "Developed responsive web applications and implemented amazing designs.",
     skills: ["HTML", "CSS", "JS", "PHP", "MySQL"],
   },
  

@@ -5,7 +5,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import { ChevronDown } from "lucide-react"
 
-const roles = ["Front-End Engineer", "Computer Scientist @ Co-op Uni Kenya", "SRHR Advocate @ RHNK", "Mobile App Developer", "Tech Enthusiast"]
+const roles = ["Front-End Developer","Web  Developer", "Computer Scientist @ Co-op Uni Kenya", "SRHR Advocate @ RHNK", "Tech Enthusiast"]
 
 export default function Hero() {
   const [currentRole, setCurrentRole] = useState(0)
@@ -134,7 +134,7 @@ export default function Hero() {
             </div>
 
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
-              I craft exceptional digital experiences with a focus on performance, aesthetics, and user experience.
+              I craft exceptional digital experiences with a focus on performance, and user experience.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-8">
@@ -146,7 +146,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-r from-rose-700 to-rose-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
               </a>
               <a
-                href="https://www.dropbox.com/scl/fi/9wbqpsn2t1647yjpjvqub/MARCELLAS_DANIEL_INDEJE_Resume.pdf?rlkey=dyflx5s8x9vcow6dnvaufq2ri&st=batzyz2u&dl=0"
+                href="https://www.dropbox.com/scl/fi/cosszovfaottpgh2fo01m/MARCELLAS_DANIEL_INDEJE_Resume.pdf?rlkey=1ws1iu3mijufpbt79ash6ks5y&st=u8xskcak&dl=0"
                 className="px-8 py-3 border-2 border-rose-600 text-rose-600 dark:border-rose-400 dark:text-rose-400 rounded-full font-semibold hover:bg-rose-50 dark:hover:bg-slate-800/50 transition-colors relative group"
               >
                 <span className="relative z-10">Download CV</span>
