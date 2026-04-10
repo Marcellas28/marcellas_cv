@@ -34,17 +34,17 @@ export default function About() {
     {
       icon: <Code2 className="w-5 h-5" />,
       title: "Full-Stack Development",
-      description: "React.js, TypeScript, Node.js, .NET Core, SQL"
+      description: "Angular, Spring Boot, React.js, Node.js, .NET Core"
     },
     {
       icon: <Palette className="w-5 h-5" />,
       title: "UI/UX & Graphic Design",
-      description: "Adobe Photoshop, Photoscape, Canva,"
+      description: "Adobe Photoshop, Figma, Canva, Photoscape"
     },
     {
       icon: <Network className="w-5 h-5" />,
-      title: "Networking & Systems",
-      description: "Network Configuration, TCP/IP, Linux Administration"
+      title: "Networking & Infrastructure",
+      description: "Network Troubleshooting, TCP/IP, ARP, Access Point Configuration"
     },
     {
       icon: <HeartHandshake className="w-5 h-5" />,
@@ -54,7 +54,7 @@ export default function About() {
     {
       icon: <Music className="w-5 h-5" />,
       title: "Sound Engineering",
-      description: "Audio Equipment Control, Technical Production,Drummer"
+      description: "Audio Equipment Control, Technical Production, Drummer"
     }
   ]
 
@@ -106,11 +106,11 @@ export default function About() {
 
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
-                Passionate Software Engineer and Developer with <span className="font-semibold text-gray-900 dark:text-white">2+ years</span> of experience creating innovative solutions that blend <span className="text-rose-600 dark:text-rose-400 font-medium">technical excellence</span> with <span className="text-blue-600 dark:text-blue-400 font-medium">visual design</span>.
+                Innovative <span className="font-semibold text-gray-900 dark:text-white">Full-Stack Developer</span> and IT professional with hands-on experience in <span className="text-rose-600 dark:text-rose-400 font-medium">Angular, Spring Boot, REST APIs, and React</span>.
               </p>
 
               <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
-                I specialize in developing scalable applications using modern technologies while maintaining a strong focus on user experience and clean, maintainable code. My unique combination of technical and creative skills allows me to bridge the gap between development and design.
+                Currently interning as a Full-Stack Developer at <span className="font-semibold">Compulynx</span>, I specialize in developing scalable applications and networking infrastructure while maintaining a strong focus on UI/UX design and clean, maintainable code.
               </p>
 
               {/* Expertise Points */}

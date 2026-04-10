@@ -5,7 +5,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import { ChevronDown } from "lucide-react"
 
-const roles = ["Front-End Developer","Web  Developer", "Computer Scientist @ Co-op Uni Kenya", "SRHR Advocate @ RHNK", "Tech Enthusiast"]
+const roles = ["Full-Stack Developer Intern @ Compulynx", "Front-End Developer", "Web Developer", "Computer Scientist", "SRHR Advocate @ RHNK", "Tech Enthusiast"]
 
 export default function Hero() {
   const [currentRole, setCurrentRole] = useState(0)
@@ -172,7 +172,7 @@ export default function Hero() {
               </div>
               <div className="text-center lg:text-left group cursor-pointer">
                 <div className="text-4xl font-bold text-rose-600 dark:text-rose-400 group-hover:scale-125 transition-transform">
-                  1+
+                  2+
                 </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400 mt-2 group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">
                   Years

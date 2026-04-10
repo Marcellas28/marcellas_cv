@@ -9,8 +9,8 @@ const educationData = [
     institution: "The Co-operative University of Kenya",
     location: "Nairobi-Karen",
     degree: "Diploma in Computer Science",
-    period: "2023 – Present",
-    expected: "Expected Graduation: December 2026",
+    period: "2023 – 2025",
+    expected: "Graduation: December 2025",
     //gpa: "Current GPA: 3.8/4.0",
     
     coursework: [
@@ -67,20 +67,28 @@ const educationData = [
 
 const certifications = [
   {
-    title: "DATACOM HCIA",
-    issuer: "Huawei Technologies",
+    title: "HCIA (Huawei Certified ICT Associate)",
+    issuer: "Huawei ICT Academy",
     date: "2025",
-    credentialId: "Huawei Certified ICT Associate (HCIA)",
-    skills: [ "TCP/IP Networking",
+    credentialId: "Completed",
+    skills: [
+      "TCP/IP Networking",
       "Routing & Switching",
       "Network Security",
-      "IPv4/IPv6 Addressing",
-      "VLAN Configuration",
-      "OSPF Protocols",
-      "Network Troubleshooting",
-      "Huawei CLI Configuration"]
+      "Huawei CLI Configuration"
+    ]
   },
-  
+  {
+    title: "Introduction to IoT & Network Technician",
+    issuer: "Cisco Networking Academy",
+    date: "2026",
+    credentialId: "In Progress",
+    skills: [
+      "Internet of Things",
+      "Network Fundamentals",
+      "Troubleshooting"
+    ]
+  }
 ]
 
 export default function Education() {

@@ -4,27 +4,33 @@ import { useEffect, useRef, useState } from "react"
 
 const experiences = [
   {
-    period: "2025-present",
-    position: "Front-End Developer",
-    company: "TRC Systems",
-    description: "Develop user friendly and responsive CRM systems as per user interests.",
-    skills: ["React", "Tailwind CSS", "JS", "SQL"],
-  },
-   {
-    period: "2025",
-    position: "ICT Assistant",
-    company: "KMTC Kilifi Campus",
-    description: "Developed responsive school systems and improved network infrastructure.",
-    skills: ["React", "Tailwind CSS", "JS", "SQL"],
+    period: "Feb 2026 – Present",
+    position: "Full-Stack Developer Intern",
+    company: "Compulynx",
+    description: "Developing and maintaining full-stack web applications using Angular (frontend) and Spring Boot (backend). Designing and consuming RESTful APIs to enable seamless client-server communication.",
+    skills: ["Angular", "Spring Boot", "REST APIs", "Agile"],
   },
   {
-    period: "2023",
-    position: "Web Developer",
-    company: "Free_Lancer",
-    description: "Developed responsive web applications and implemented amazing designs.",
-    skills: ["HTML", "CSS", "JS", "PHP", "MySQL"],
+    period: "2025",
+    position: "Front End Developer",
+    company: "TRC Systems",
+    description: "Delivered scalable web solutions using ReactJS, TypeScript, and RESTful APIs, improving user engagement. Championed a comprehensive testing framework ensuring software reliability.",
+    skills: ["React", "TypeScript", "Tailwind CSS", "GitHub Actions"],
   },
- 
+  {
+    period: "2025",
+    position: "Volunteer / ICT Attaché",
+    company: "Kenya Medical Training College (KMTC)",
+    description: "Maintained institutional databases using SQL. Deployed and updated learning software across devices; configured network infrastructure (access points, ARP troubleshooting).",
+    skills: ["SQL", "Python", "Networking", "Tech Support"],
+  },
+  {
+    period: "2024",
+    position: "Advocate",
+    company: "Reproductive Health Network Kenya",
+    description: "Promoted adolescent SRHR through peer education. Used Kobo Toolbox for field data collection and SQL/Excel for data cleaning and analysis.",
+    skills: ["Data Analysis", "SQL", "Community Mobilization"],
+  },
 ]
 
 export default function Experience() {

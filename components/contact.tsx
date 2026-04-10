@@ -56,21 +56,21 @@ export default function Contact() {
                 </div>
               </a>
 
-              <a href="tel:+254712656502" className="flex items-center gap-4 group">
+              <a href="tel:+254712636502" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 bg-rose-600 rounded-full flex items-center justify-center group-hover:bg-rose-500 transition-colors">
                   <Phone size={24} />
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">WhatsApp</p>
                   <p className="font-semibold text-white group-hover:text-rose-400 transition-colors">
-                    +254 712 656 502
+                    +254 712 636 502
                   </p>
                 </div>
               </a>
 
               <div className="flex gap-6 pt-8">
                 <a
-                  href="https:www.linkedin.com/in/marcellas-daniel-i-27627831a"
+                  href="https://www.linkedin.com/in/marcellas-daniel-indeje-27627831a/"
                   className="w-12 h-12 bg-rose-600 rounded-full flex items-center justify-center hover:bg-rose-500 transition-colors hover:scale-110 transform"
                 >
                   <Linkedin size={24} />

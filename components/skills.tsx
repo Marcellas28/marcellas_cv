@@ -6,52 +6,62 @@ const skillCategories = [
   {
     title: "Frontend Development",
     skills: [
-      { name: "HTML/CSS", level: 95 },
-      { name: "JavaScript", level: 90 },
+      { name: "Angular", level: 85 },
+      { name: "React.js", level: 90 },
       { name: "TypeScript", level: 96 },
-      { name: "React.js", level: 85 },
+      { name: "JavaScript", level: 90 },
       { name: "Tailwind CSS", level: 90 },
+      { name: "Vue.js", level: 75 },
+      { name: "Next.js", level: 80 },
     ],
   },
   {
-    title: "Backend & Databases",
+    title: "Backend & APIs",
     skills: [
+      { name: "Spring Boot", level: 85 },
       { name: "Node.js", level: 80 },
+      { name: "Express.js", level: 80 },
+      { name: ".NET Core", level: 75 },
       { name: "Python", level: 85 },
-      { name: "Java", level: 85 },
-      { name: "MySQL", level: 88 },
       { name: "RESTful APIs", level: 90 },
     ],
   },
   {
-    title: "Frameworks & Libraries",
+    title: "Databases",
     skills: [
-      { name: "Next.js", level: 75 },
-      
-      { name: "Django/Flask", level: 70 },
-      { name: "Express.js", level: 80 },
-      { name: "React Native", level: 65 },
-      { name: "Vue.js", level: 65 },
+      { name: "MySQL", level: 88 },
+      { name: "Firebase", level: 85 },
+      { name: "SQL", level: 90 },
     ],
   },
   {
-    title: "DevOps & Cloud",
+    title: "DevOps & Tools",
     skills: [
-      { name: "Git/GitHub/GitLab", level: 90 },
+      { name: "Git/GitHub", level: 90 },
       { name: "Docker", level: 80 },
-      { name: "AWS/Azure/GCP", level: 70 },
-      { name: "CI/CD (GitHub Actions)", level: 75 },
+      { name: "CI/CD (GitHub Actions)", level: 85 },
+      { name: "AWS/Azure", level: 75 },
       { name: "Linux", level: 80 },
+      { name: "Postman", level: 85 },
     ],
   },
   {
-    title: "Tools & Practices",
+    title: "Networking & Infrastructure",
+    skills: [
+      { name: "Network Troubleshooting", level: 85 },
+      { name: "TCP/IP & ARP", level: 80 },
+      { name: "Network Administration", level: 75 },
+      { name: "Access Point Config", level: 80 },
+    ],
+  },
+  {
+    title: "Design & Creative",
     skills: [
       { name: "UI/UX Design (Figma)", level: 90 },
-      { name: "Testing (Jest, Cypress)", level: 75 },
-      { name: "Postman", level: 85 },
+      { name: "Adobe Photoshop", level: 85 },
+      { name: "Canva", level: 90 },
       { name: "Graphic Designing", level: 85 },
-    ], // Added missing closing bracket here
+    ],
   },
 ]
 
@@ -90,7 +100,7 @@ export default function Skills() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={category.title}
