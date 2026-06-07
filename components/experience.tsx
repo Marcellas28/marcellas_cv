@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react"
 const experiences = [
   {
     period: "Feb 2026 – Present",
-    position: "Full-Stack Developer Intern",
+    position: "Full-Stack Junior Developer",
     company: "Compulynx",
     description: "Developing and maintaining full-stack web applications using Angular (frontend) and Spring Boot (backend). Designing and consuming RESTful APIs to enable seamless client-server communication.",
     skills: ["Angular", "Spring Boot", "REST APIs", "Agile"],
