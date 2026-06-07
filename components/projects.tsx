@@ -7,7 +7,7 @@ const projects = [
   {
     title: "RHNK Conference Booth Selection",
     description:
-      "Built for the Reproductive Health Network Kenya conference — a real-time booth selection system allowing attendees to browse and reserve exhibition booths during a live event.",
+      "Real-time booth selection system built for the RHNK conference. Connected to Google Sheets via the Sheets API to read available booths and write reservations live during the event. Provides a user-friendly interface for attendees to choose booths while preventing double bookings.",
     image: "/booth.png",
     tags: ["React", "TypeScript", "Vercel"],
     link: "https://rhnk-confrence-booth.vercel.app/",
@@ -17,7 +17,7 @@ const projects = [
   {
     title: "RHNK Conference Check-In System",
     description:
-      "Attendee check-in platform deployed for a real RHNK conference. Enables fast name lookup and arrival confirmation for event staff, replacing manual register processes.",
+      "Attendee check-in platform built for RHNK conference. Integrated Google Sheets API to fetch and post attendee data in real time, replacing manual registration processes for event staff. Enables fast name lookup and arrival confirmation for event staff.",
     image: "/checkin.png",
     tags: ["React", "JavaScript", "Vercel"],
     link: "https://rhnk-check-in.vercel.app/",
