@@ -5,36 +5,65 @@ import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
   {
+    title: "RHNK Conference Booth Selection",
+    description:
+      "Built for the Reproductive Health Network Kenya conference — a real-time booth selection system allowing attendees to browse and reserve exhibition booths during a live event.",
+    image: "/booth.png",
+    tags: ["React", "TypeScript", "Vercel"],
+    link: "https://rhnk-confrence-booth.vercel.app/",
+    github: "",
+    badge: "Live · Used in Production",
+  },
+  {
+    title: "RHNK Conference Check-In System",
+    description:
+      "Attendee check-in platform deployed for a real RHNK conference. Enables fast name lookup and arrival confirmation for event staff, replacing manual register processes.",
+    image: "/checkin.png",
+    tags: ["React", "JavaScript", "Vercel"],
+    link: "https://rhnk-check-in.vercel.app/",
+    github: "",
+    badge: "Live · Used in Production",
+  },
+  {
+    title: "TRIBE CRM Dashboard",
+    description:
+      "Comprehensive CRM system developed at TRC Systems for tracking customer transactions, managing store inventory, and providing a POS interface for retail operations.",
+    image: "/crm.png",
+    tags: ["React", "Tailwind CSS", "SQL", "TypeScript"],
+    link: "https://tribessystems.co.ke/",
+    github: "https://github.com/Marcellas28/TRIBE.git",
+    badge: "Live · Used in Production",
+  },
+  {
+    title: "ID Photo Verification System",
+    description:
+      "Automated student identity verification system built for KMTC. Uses facial recognition algorithms to authenticate student IDs, eliminating manual photo checks across hundreds of records.",
+    image: "/school-management-system.jpg",
+    tags: ["React", "Tailwind CSS", "SQL", "Python"],
+    link: "https://github.com/Marcellas28/ID-verification-system.git",
+    github: "https://github.com/Marcellas28/ID-verification-system.git",
+    badge: null,
+  },
+  
+  {
     title: "E-Learning Platform",
-    description: "A full-featured online store with product management, cart functionality, and payment processing.",
+    description:
+      "Frontend web platform for DumaniTech Solutions featuring course listings, responsive layout, and smooth user experience across devices.",
     image: "/elearning-platform-interface.jpg",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://marcellas28.github.io/DumaniTech_Solutions/",
     github: "https://github.com/Marcellas28/DumaniTech_Solutions.git",
+    badge: null,
   },
   {
-    title: "Health Website",
-    description: "Custom-designed portfolio website with responsive layout and smooth animations.",
+    title: "Health Awareness Website",
+    description:
+      "Responsive health information website built for an adolescent SRHR initiative, with clean layout and community-focused content delivery.",
     image: "/kuu.png",
     tags: ["HTML/CSS", "JavaScript", "OpenAPI"],
     link: "https://marcellas28.github.io/Nena-Na-Binti-1/",
     github: "https://github.com/Marcellas28/Nena-Na-Binti-1.git",
-  },
-  {
-    title: "ID Photo Verification System",
-    description: "Comprehensive system for managing school operations and student records.",
-    image: "/school-management-system.jpg",
-    tags: ["React", "Tailwind CSS", "SQL"],
-    link: "https://github.com/Marcellas28/ID-verification-system.git",
-    github: "https://github.com/Marcellas28/ID-verification-system.git",
-  },
-  {
-    title: "CRM Dashboard",
-    description: "Comprehensive system for managing customer transcations and user store inventory",
-    image: "/crm.png",
-    tags: ["React", "Tailwind CSS", "SQL"],
-    link: "https://github.com/Marcellas28/TRIBE.git",
-    github: "https://github.com/Marcellas28/TRIBE.git",
+    badge: null,
   },
 ]
 
@@ -73,7 +102,9 @@ export default function Projects() {
           <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
             Recent <span className="text-rose-600 dark:text-rose-400 animate-shimmer">Projects</span>
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400">Here are some of my recent works</p>
+          <p className="text-lg text-gray-600 dark:text-gray-400">
+            Real-world systems built for organisations and clients
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -93,7 +124,14 @@ export default function Projects() {
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-125"
                 />
-                {/* Enhanced overlay */}
+                {/* Production badge */}
+                {project.badge && (
+                  <div className="absolute top-3 left-3 z-10">
+                    <span className="text-xs px-2 py-1 bg-green-500 text-white rounded-full font-semibold shadow">
+                      {project.badge}
+                    </span>
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="text-white text-center">
@@ -108,7 +146,7 @@ export default function Projects() {
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm line-clamp-2">{project.description}</p>
+                <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm line-clamp-3">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, tagIndex) => (
@@ -125,6 +163,8 @@ export default function Projects() {
                 <div className="flex gap-3">
                   <a
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition-all duration-300 text-sm font-semibold relative overflow-hidden group/btn"
                   >
                     <span className="relative z-10 flex items-center gap-2">
@@ -132,12 +172,16 @@ export default function Projects() {
                     </span>
                     <div className="absolute inset-0 bg-rose-700 transform scale-y-0 group-hover/btn:scale-y-100 transition-transform origin-bottom" />
                   </a>
-                  <a
-                    href={project.github}
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gray-200 dark:bg-slate-800 text-gray-900 dark:text-white rounded-lg hover:bg-gray-300 dark:hover:bg-slate-700 transition-all duration-300 text-sm font-semibold"
-                  >
-                    <Github size={16} /> Code
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gray-200 dark:bg-slate-800 text-gray-900 dark:text-white rounded-lg hover:bg-gray-300 dark:hover:bg-slate-700 transition-all duration-300 text-sm font-semibold"
+                    >
+                      <Github size={16} /> Code
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

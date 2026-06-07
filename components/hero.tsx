@@ -5,7 +5,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import { ChevronDown } from "lucide-react"
 
-const roles = ["Full-Stack Developer Intern @ Compulynx", "Front-End Developer", "Web Developer", "Computer Scientist", "SRHR Advocate @ RHNK", "Tech Enthusiast"]
+const roles = ["Full-Stack Junior Developer @ Compulynx", "Front-End Developer", "Web Developer", "Computer Scientist", "SRHR Advocate @ RHNK", "Tech Enthusiast"]
 
 export default function Hero() {
   const [currentRole, setCurrentRole] = useState(0)
@@ -145,13 +145,13 @@ export default function Hero() {
                 <span className="relative z-10">Get In Touch</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-rose-700 to-rose-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
               </a>
-              <a
+           {/*   <a
                 href="https://www.dropbox.com/scl/fi/cosszovfaottpgh2fo01m/MARCELLAS_DANIEL_INDEJE_Resume.pdf?rlkey=1ws1iu3mijufpbt79ash6ks5y&st=u8xskcak&dl=0"
                 className="px-8 py-3 border-2 border-rose-600 text-rose-600 dark:border-rose-400 dark:text-rose-400 rounded-full font-semibold hover:bg-rose-50 dark:hover:bg-slate-800/50 transition-colors relative group"
               >
                 <span className="relative z-10">Download CV</span>
-              </a>
-            </div>
+              </a> */}
+            </div> 
 
             <div className="grid grid-cols-3 gap-8 pt-12">
               <div className="text-center lg:text-left group cursor-pointer">
@@ -164,10 +164,10 @@ export default function Hero() {
               </div>
               <div className="text-center lg:text-left group cursor-pointer">
                 <div className="text-4xl font-bold text-rose-600 dark:text-rose-400 group-hover:scale-125 transition-transform">
-                  8+
+                  3+
                 </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400 mt-2 group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">
-                  Clients
+                  Companies
                 </div>
               </div>
               <div className="text-center lg:text-left group cursor-pointer">

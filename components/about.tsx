@@ -110,7 +110,7 @@ export default function About() {
               </p>
 
               <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
-                Currently interning as a Full-Stack Developer at <span className="font-semibold">Compulynx</span>, I specialize in developing scalable applications and networking infrastructure while maintaining a strong focus on UI/UX design and clean, maintainable code.
+                Currently a Junior Full-Stack Developer at <span className="font-semibold">Compulynx</span>, I specialize in developing scalable applications and networking infrastructure while maintaining a strong focus on UI/UX design and clean, maintainable code.
               </p>
 
               {/* Expertise Points */}
@@ -144,7 +144,7 @@ export default function About() {
               <div className="mt-6 p-4 rounded-lg bg-gradient-to-r from-blue-50 to-rose-50 dark:from-blue-900/10 dark:to-rose-900/10 border border-blue-200/50 dark:border-blue-500/20">
                 <p className="text-center text-gray-700 dark:text-gray-300">
                   <span className="font-semibold text-blue-600 dark:text-blue-400">Currently Seeking:</span>{" "}
-                  Internships • Junior Developer Roles • Freelance Projects • Tech Collaborations
+                   Junior Developer Roles • Freelance Projects • Tech Collaborations
                 </p>
               </div>
             </div>

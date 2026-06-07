@@ -5,62 +5,73 @@ import { useEffect, useRef, useState } from "react"
 const skillCategories = [
   {
     title: "Frontend Development",
+    icon: "🖥️",
     skills: [
-      { name: "Angular", level: 85 },
-      { name: "React.js", level: 90 },
-      { name: "TypeScript", level: 96 },
-      { name: "JavaScript", level: 90 },
-      { name: "Tailwind CSS", level: 90 },
-      { name: "Vue.js", level: 75 },
-      { name: "Next.js", level: 80 },
+      "React.js",
+      "Next.js",
+      "Angular",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "Vue.js",
+      "HTML & CSS",
     ],
   },
   {
     title: "Backend & APIs",
+    icon: "⚙️",
     skills: [
-      { name: "Spring Boot", level: 85 },
-      { name: "Node.js", level: 80 },
-      { name: "Express.js", level: 80 },
-      { name: ".NET Core", level: 75 },
-      { name: "Python", level: 85 },
-      { name: "RESTful APIs", level: 90 },
+      "Node.js",
+      "Express.js",
+      "Spring Boot",
+      "Python",
+      "RESTful APIs",
+      ".NET Core",
     ],
   },
   {
     title: "Databases",
+    icon: "🗄️",
     skills: [
-      { name: "MySQL", level: 88 },
-      { name: "Firebase", level: 85 },
-      { name: "SQL", level: 90 },
+      "PostgreSQL",
+      "MySQL",
+      "Firebase",
+      "SQL",
     ],
   },
   {
-    title: "DevOps & Tools",
+    title: "DevOps & Cloud",
+    icon: "☁️",
     skills: [
-      { name: "Git/GitHub", level: 90 },
-      { name: "Docker", level: 80 },
-      { name: "CI/CD (GitHub Actions)", level: 85 },
-      { name: "AWS/Azure", level: 75 },
-      { name: "Linux", level: 80 },
-      { name: "Postman", level: 85 },
+      "Git & GitHub",
+      "Docker",
+      "CI/CD (GitHub Actions)",
+      "AWS",
+      "Azure",
+      "Linux",
+      "Postman",
     ],
   },
   {
     title: "Networking & Infrastructure",
+    icon: "🌐",
     skills: [
-      { name: "Network Troubleshooting", level: 85 },
-      { name: "TCP/IP & ARP", level: 80 },
-      { name: "Network Administration", level: 75 },
-      { name: "Access Point Config", level: 80 },
+      "TCP/IP & ARP",
+      "Network Troubleshooting",
+      "Network Administration",
+      "Access Point Configuration",
+      "WLAN/WAN Basics",
     ],
   },
   {
     title: "Design & Creative",
+    icon: "🎨",
     skills: [
-      { name: "UI/UX Design (Figma)", level: 90 },
-      { name: "Adobe Photoshop", level: 85 },
-      { name: "Canva", level: 90 },
-      { name: "Graphic Designing", level: 85 },
+      "Figma (UI/UX)",
+      "Adobe Photoshop",
+      "Canva",
+      "Graphic Design",
+     
     ],
   },
 ]
@@ -76,7 +87,7 @@ export default function Skills() {
           setIsVisible(true)
         }
       },
-      { threshold: 0.3 },
+      { threshold: 0.2 },
     )
 
     if (ref.current) observer.observe(ref.current)
@@ -96,7 +107,7 @@ export default function Skills() {
             Technical <span className="text-rose-600 dark:text-rose-400">Expertise</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            Technologies and methodologies I leverage to build scalable, efficient solutions
+            Technologies and tools I use to build real-world solutions
           </p>
         </div>
 
@@ -104,43 +115,35 @@ export default function Skills() {
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={category.title}
-              className="bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 relative group overflow-hidden"
+              className={`bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 relative group overflow-hidden ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
+              style={{ transitionDelay: `${categoryIndex * 100}ms` }}
             >
               <div className="absolute inset-0 bg-gradient-to-br from-rose-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-              <h3 className="text-lg font-bold mb-4 text-gray-900 dark:text-white relative z-10 flex items-center">
-                <span className="w-3 h-3 bg-rose-500 rounded-full mr-2"></span>
+              <h3 className="text-lg font-bold mb-4 text-gray-900 dark:text-white relative z-10 flex items-center gap-2">
+                <span className="text-xl">{category.icon}</span>
                 {category.title}
               </h3>
 
-              <div className="space-y-4 relative z-10">
+              <div className="flex flex-wrap gap-2 relative z-10">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skill.name} className="group/skill">
-                    <div className="flex justify-between mb-1">
-                      <span className="font-semibold text-sm text-gray-700 dark:text-gray-300">
-                        {skill.name}
-                      </span>
-                      <span className="text-rose-600 dark:text-rose-400 font-bold text-sm">
-                        {skill.level}%
-                      </span>
-                    </div>
-                    <div className="w-full bg-gray-200 dark:bg-slate-700 rounded-full h-2 overflow-hidden">
-                      <div
-                        className="h-full bg-gradient-to-r from-rose-600 to-rose-400 rounded-full transition-all duration-1000 ease-out"
-                        style={{ 
-                          width: isVisible ? `${skill.level}%` : '0%',
-                          transitionDelay: `${categoryIndex * 100 + skillIndex * 50}ms`
-                        }}
-                      />
-                    </div>
-                  </div>
+                  <span
+                    key={skill}
+                    className={`text-sm px-3 py-1.5 bg-rose-50 dark:bg-rose-900/20 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800 rounded-full font-medium hover:bg-rose-100 dark:hover:bg-rose-900/40 transition-all duration-200 hover:scale-105 ${
+                      isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                    }`}
+                    style={{ transitionDelay: `${categoryIndex * 100 + skillIndex * 40}ms` }}
+                  >
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
           ))}
         </div>
 
-        {/* Optional: Add a note about continuous learning */}
         <div className="mt-12 text-center">
           <p className="text-sm text-gray-500 dark:text-gray-400 italic">
             Always expanding my toolkit with emerging technologies and best practices

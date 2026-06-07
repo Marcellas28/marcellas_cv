@@ -40,7 +40,7 @@ export default function Navigation() {
     { label: "Experience", href: "#experience" },
     { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" },
-    { label: "LinkedIn", href: "www.linkedin.com/in/marcellas-daniel-i-27627831a" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/marcellas-daniel-i-27627831a/" },
   ]
 
   return (
